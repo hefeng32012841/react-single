@@ -1,0 +1,90 @@
+{
+  "dsp": {
+    "dsp_configs": [
+      {
+        "id": "1",
+        "name": "dsp/toutiao",
+        "default_price": "5",
+        "comment": "今日头条",
+        "concurrency": 100,
+        "url": "http://ad.toutiao.com/lb/api/online",
+        "is_rtb": true,
+        "weight": 100,
+        "display_in_millis": 5000,
+        "pause_span": [
+          {
+            "start": "1474609157",
+            "end": "1673406023"
+          },
+          {
+            "start": "1243234464765",
+            "end": "1343454568678"
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "id": "2",
+        "name": "dsp/getui",
+        "default_price": "4",
+        "comment": "个推",
+        "concurrency": 200,
+        "url": "http://ad.getui.com/lb/api/online",
+        "is_rtb": false,
+        "weight": 1,
+        "display_in_millis": 5000,
+        "pause_span": [
+          {
+            "start": "11111111111",
+            "end": "1343454565778"
+          },
+          {
+            "start": "222222222222",
+            "end": "1343454568678"
+          }
+        ],
+        "disabled": false
+      }
+    ]
+  },
+  "uid": [
+    {
+      "id": 10034,
+      "_id": 10034,
+      "wl_id": "11",
+      "count": "0",
+      "create_time": "1474609157",
+      "expire_time": "1673406023",
+      "update_time": "1673406023"
+    },
+    {
+      "_id": 11,
+      "id": 11,
+      "wl_id": "11",
+      "count": "0",
+      "create_time": "1474609157",
+      "expire_time": "1673406023",
+      "update_time": "1673406023"
+    }
+  ],
+  "cid": [
+    {
+      "id": 20034,
+      "_id": 20034,
+      "wl_id": "21",
+      "count": "3",
+      "create_time": "1474609157",
+      "expire_time": "1673406023",
+      "update_time": "1673406023"
+    },
+    {
+      "_id": 22,
+      "id": 22,
+      "wl_id": "22",
+      "count": "6",
+      "create_time": "1474609157",
+      "expire_time": "1673406023",
+      "update_time": "1673406023"
+    }
+  ]
+}

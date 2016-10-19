@@ -1,0 +1,11 @@
+owners {
+    not-inherit: false
+    approvers: [
+        "gaolw",
+    ]
+    members: [
+        "yangzhou",
+        "denglb",
+        "zhangyan",
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "quotes": [1, "single"],
+        "strict": [2, "never"],
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/react-in-jsx-scope": 2,
+        "camelcase": 1,
+        "curly": 1,
+        "brace-style": [1, "1tbs"],
+        "semi": 0,
+        "space-infix-ops": 1,
+        "arrow-spacing": 1,
+    },
+    "plugins": [
+        "react"
+    ]
+}
