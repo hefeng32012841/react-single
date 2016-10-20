@@ -1,2 +1,2 @@
-import configureStore from './configureStore'
-export default configureStore()
+import configure from './storeConfigure'
+export default configure()

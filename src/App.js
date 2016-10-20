@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import Timer from './views/Timer'
+import AddTodo from './views/AddTodo'
+// import TodoList from './views/TodoList'
+// import Footer from './views/Footer'
 
 export default class App extends Component {
-    render() {
-        return (
-            <div className="root">
-                <Timer />
-            </div>
-        )
-    }
+	render() {
+		return (
+			<div className="root">
+				<AddTodo />
+			</div>
+		)
+	}
 }
