@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-// import { findDOMNode } from 'react-dom'
+import { findDOMNode } from 'react-dom'
 import { connect } from 'react-redux'
-import { addTodoAction } from '../actions/actionCreator'
+import { changeAction } from '../actions/actionCreator'
 
 export class AddTodo extends Component {
 	constructor(props) {
@@ -9,19 +9,18 @@ export class AddTodo extends Component {
 	}
 
 	addHandle(e) {
-		const { onClick } = this.props
-		// const input = findDOMNode(this.refs.input)
-		// const value = input.value
-		const value = e.target.value
-		onClick(value)
+		const { onAddClick, dispatch } = this.props
+		const input = findDOMNode(this.refs.input)
+		const value = input.value
+		onAddClick(value)
 	}
 
 	changeHandle(e) {
-		const { onChange } = this.props
+		const { onChange, dispatch } = this.props
 		// const input = findDOMNode(this.refs.input)
 		// const value = input.value
 		const value = e.target.value
-		onChange(value)
+		dispatch(changeAction(value))
 	}
 
 	render() {
@@ -42,12 +41,11 @@ function mapStateToProps(state) {
 	}
 }
 
-const mapDispatchToProps = {
-	onClick: value => addTodoAction('ADD' ,value),
-	onChange: value => addTodoAction('INPUT', value),
-}
+// const mapDispatchToProps = {
+// 	onClick: todos => addAction(todos),
+// 	onChange: value => inputAction(value),
+// }
 
 export default connect(
-	mapStateToProps,
-	mapDispatchToProps
+	mapStateToProps
 )(AddTodo)

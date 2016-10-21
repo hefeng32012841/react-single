@@ -30,7 +30,7 @@ var config = {
      * 监听端口
      * @params {number}
      */
-    port: 9000,
+    port: 4000,
 
     secure: true
 };
